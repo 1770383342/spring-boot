@@ -1,8 +1,8 @@
 #当value值普通数据类型时的配置
-server:
-  port: 8082
-  servlet:
-    context-path: /hello
+#server:
+#  port: 8082
+#  servlet:
+#    context-path: /hello
 
 #当value值喂数组或者单列集合
 hobby:
