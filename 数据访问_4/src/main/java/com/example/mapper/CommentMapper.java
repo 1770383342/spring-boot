@@ -1,6 +1,6 @@
 package com.example.mapper;
 
-import com.example.domain.Comment;
+import com.example.demo.Comment;
 import org.apache.ibatis.annotations.*;
 
 import java.awt.*;

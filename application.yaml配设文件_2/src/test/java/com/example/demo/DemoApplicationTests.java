@@ -34,12 +34,12 @@ class DemoApplicationTests {
 
     @Test
     void contextLoads() {
-//        System.out.println(person);
-//        System.out.println(name);
-//        System.out.println(user.getEmail());
-//        System.out.println(myProperties);
-//        MyService myService = (MyService) applicationContext.getBean("myService1");
-//        System.out.println(myService);
+        System.out.println(person);
+        System.out.println(name);
+        System.out.println(user.getEmail());
+        System.out.println(myProperties);
+        MyService myService = (MyService) applicationContext.getBean("myService1");
+        System.out.println(myService);
     }
 
     @Autowired

@@ -1,7 +1,5 @@
-package com.example.test;
+package com.example.demo;
 
-import com.example.domain.Article;
-import com.example.domain.Comment;
 import com.example.mapper.ArticleMapper;
 import com.example.mapper.CommentMapper;
 import org.junit.jupiter.api.Test;

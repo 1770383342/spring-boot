@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.mapper.ArticleMapper">
+
+    <resultMap id="ac" type="Article">
+        <id property="id" column="id"></id>
+        <result property="title" column="title"></result>
+        <result property="content" column="content"></result>
+        <collection property="commentList" ofType="com.example.demo.Comment">
+            <id property="id" column="c_id"></id>
+            <result property="content" column="content"></result>
+            <result property="author" column="author"></result>
+            <result property="aId" column="aId"></result>
+        </collection>
+    </resultMap>
+    
+    <select id="selectArticle" resultMap="ac" parameterType="int">
+        SELECT a.*,c.id c_id,c.content,c.author,c.a_id FROM t_article a,t_comment c WHERE c.a_id= a.id and a.id=#{aid};
+    </select>
+</mapper>
